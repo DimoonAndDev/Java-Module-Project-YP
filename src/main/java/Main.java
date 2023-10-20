@@ -9,9 +9,9 @@ public class Main {
         Calculator calculator = new Calculator();                                   //создаем объект калькулятор, чтобы в него "сохранять" товары
         String name;
         while (true) {
-            System.out.println("Введи имя товара или \"Завершить\"");               //бесконечный запрос товаров с проверкой (29стр) после каждого добавления товара. break на 49 строке
+            System.out.println("Введи имя товара или \"Завершить\" или \"End\"");               //бесконечный запрос товаров с проверкой (29стр) после каждого добавления товара. break на 49 строке
             name = scanner.nextLine();
-            if (!name.toLowerCase(Locale.ROOT).equals("завершить")) {
+            if (!name.toLowerCase(Locale.ROOT).equals("завершить") && !name.toLowerCase(Locale.ROOT).equals("end")) {
                 calculator.addGood(getGood(name));
                 System.out.println("Товар успешно добавлен!");
             } else {
