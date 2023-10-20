@@ -1,4 +1,4 @@
-public class Good { //как по мне,в данной программе данный класс необязателен, но его создание очень показательно
+public class Good {
     String name;
     float price;
 
@@ -7,7 +7,7 @@ public class Good { //как по мне,в данной программе да
         this.price = price;
     }
 
-    public String addGoodString() {
+    public String addGoodString() { //формирование строки товара
         return String.format("%s %.2f\n", name, price);
     }
 }
